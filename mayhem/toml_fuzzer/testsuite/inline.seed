@@ -1,0 +1,2 @@
+point = { x = 1, y = 2 }
+who = { name = "ada", langs = ["c", "rust"] }

@@ -1,0 +1,72 @@
+# libFuzzer dictionary for the toml++ parser (TOML v1.0.0 tokens).
+# Keys are TOML structural / literal tokens that drive the parser down its branches.
+
+# structural
+"="
+"."
+","
+"[]"
+"[["
+"]]"
+"{}"
+"\"\""
+"''"
+"\"\"\"\"\"\""
+"''''''"
+
+# table / array-of-tables headers
+"[table]"
+"[[array]]"
+
+# inline table & array
+"{ key = \"value\" }"
+"[ 1, 2, 3 ]"
+
+# booleans
+"true"
+"false"
+
+# float specials
+"inf"
+"+inf"
+"-inf"
+"nan"
+"+nan"
+"-nan"
+"1e10"
+"0.0"
+"6.022e23"
+
+# integer bases
+"0x"
+"0o"
+"0b"
+"0xDEADBEEF"
+"0o755"
+"0b1101"
+"_"
+
+# strings & escapes
+"\\n"
+"\\t"
+"\\u"
+"\\U"
+"\\\\"
+"\\\""
+
+# datetime
+"T"
+"Z"
+"00:00:00"
+"1979-05-27"
+"1979-05-27T07:32:00Z"
+"1979-05-27 07:32:00.999999"
+
+# key = value forms
+"key = \"value\""
+"key = 1"
+"key = true"
+"a.b.c = 1"
+
+# comment
+"#"

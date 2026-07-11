@@ -1,0 +1,5 @@
+basic = "I am \t tab é"
+literal = 'C:\Users\nodejs'
+multi = """
+line one
+line two"""
